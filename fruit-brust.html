@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit-Brust</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css link -->
+     <link rel="stylesheet" href="responsive.css">
+     <!-- DaisyUI and tailwinds css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <!-- tailwinds colors styles -->
+        <style type="text/tailwindcss">
+            @theme {
+                --color-clifford: #da373d;
+                --color-primary-bg1: #F85559;
+                --color-primary-text1: #121212;
+              }
+            </style>
+            <style>
+                .font-lato{
+  font-family: "Lato", sans-serif;
+                }
+            </style>
+
+<body class="font-lato">
+    <header class="container mx-auto border">
+        <div class="navbar bg-base-100 shadow-sm bg-primary-bg1 text-white lg:rounded-full">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1" class="menu menu-sm dropdown-content bg-primary-bg1 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>About Us</a>
+                            <ul class="p-2">
+                                <li><a>Fruits</a></li>
+                                <li><a>items</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="hidden lg:flex gap-4 list-none lg:ml-10">
+                    <li><a>Home</a></li>
+                    <li><a>Abut Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </div>
+            </div>
+            <div class="navbar-center  lg:flex">
+                <div class="menu menu-horizontal px-1 items-center gap-4">
+                    <img src="./images/logo.png" alt="" class="animate-pulse">
+                    <h1 class="font-bold text-4xl">Fruit Burst</h1>
+                </div>
+            </div>
+            <div class="navbar-end hidden lg:flex lg:mr-10">
+                <div class="flex border-1 bg-white px-4 py-2 rounded-full">
+                    <input type="text" placeholder="Search here..." class="border-none outline-none text-primary-text1">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="animate-ping">
+                    <path
+                        d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                        stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </div>
+            </div>
+        </div>
+        <!-- banner section -->
+        <div class="my-10">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] h-[60vh] bg-cover flex items-center justify-center">
+                    <div class="flex flex-col justify-center">
+                        <h2 class="text-2xl lg:text-5xl text-white text-center">Exotic tastes at your <br> doorstep</h2>
+                        <p class="text-white w-2/4 text-center mx-auto my-5 lg:my-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim libero unde quidem maiores fuga, iusto quam. Praesentium alias in cupiditate.</p>
+                        <button class="btn bg-primary-bg1 border-none text-white mx-auto animate-bounce">Show All</button>
+                    </div>
+
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner down fruit -->
+             <div class="bg-white shadow-lg rounded-lg mx-auto h-[15vh] w-2/3 md:-translate-y-5 lg:-translate-y-20 hidden md:flex lg:flex justify-center items-center animate-bounce">
+                <div class="flex items-center justify-center lg:space-x-15 md:space-x-5">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/fruit1.png" alt="" class="lg:w-25 md:w-15">
+                        <p>Grapes</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/fruit2.png" alt="" class="lg:w-25 md:w-15">
+                        <p>Orange</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/fruit3.png" alt="" class="lg:w-25 md:w-15">
+                        <p>Mango</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/fruit4.png" alt="" class="lg:w-25 md:w-15">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./images/fruit5.png" alt="" class="lg:w-25 md:w-15">
+                        <p>Pomegranate</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </header>
+    <!-- main section -->
+     <main>
+
+     </main>
+     <!-- footer section -->
+      <footer>
+
+      </footer>
+</body>
+</html>
