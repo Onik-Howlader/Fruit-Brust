@@ -442,8 +442,7 @@
 
  <!--start why choose us section -->
  <section>
-    <div class="my-15">
-<div class="space-y-7">
+<div class="space-y-7 px-4 lg:px-0">
             <h2 class="text-xl md:text-3xl lg:text-5xl font-extrabold text-center">Why Choose Us!</h2>
             <p class="font-medium text-center mx-auto text-primary-text1 w-2/5">Contrary to popular belief, is not simply random
                 text. It has roots in a piece of classical Latin literature from 45 BC,
@@ -451,7 +450,7 @@
 </div>
     <div class="flex flex-col lg:flex-row mx-auto items-center mt-10 flex-1 text-center lg:text-left">
         <div class="flex flex-col-reverse lg:flex-row items-center">
-            <div class="space-y-5 lg:space-y-20 ">
+            <div class="space-y-5 lg:space-y-20  px-4 lg:px-0">
                 <!-- dedicate team-1 -->
                 <div class="flex flex-col gap-4 lg:flex-row mt-15 lg:mt-0">
                     <img src="./icons/Group 46.png" alt="" class="w-15 mx-auto">
@@ -490,7 +489,7 @@
                 <img src="./images/whychoose1.png" alt="" class="w-full">
             </div>
         </div>
-        <div class="space-y-5 lg:space-y-20 ">
+        <div class="space-y-5 lg:space-y-20  px-4 lg:px-0">
             <!-- dedacate team-4 -->
             <div class="flex gap-4 flex-col lg:flex-row-reverse">
                 <img src="./icons/Group 46 (3).png" alt="" class="w-15 mx-auto lg:mx-0">
@@ -526,9 +525,115 @@
             </div>
         </div>
     </div>
-    </div>
  </section>
  <!--end why choose us section -->
+
+ <!--start contact section -->
+ <section class="my-15">
+<div>
+    <div class="space-y-5">
+        <h1 class="text-center text-xl md:text-3xl lg:text-5xl font-extrabold">Let's talk about your project</h1>
+        <p class="text-center text-xl text-primary-text1">We help companies and individuals build out their brand guidelines</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 items-center bg-gray-100 px-10 rounded-md h-full lg:h-[60vh] mt-10 shadow-xl">
+        <div class="lg:col-span-2 mt-10 lg:mt-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="h-11">
+                    <label class="w-full input validator">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </g>
+                        </svg>
+                        <input type="text" required placeholder="First Name" pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3" maxlength="30"
+                            title="Only letters, numbers or dash " />
+                    </label>
+                    <p class="validator-hint">
+                        Must be 3 to 30 characters
+                        <br />containing only letters, numbers or dash
+                    </p>
+                </div>
+                <div class="h-11">
+                    <label class="w-full input validator">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </g>
+                        </svg>
+                        <input type="text" required placeholder="Last Name" pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3" maxlength="30"
+                            title="Only letters, numbers or dash" />
+                    </label>
+                    <p class="validator-hint">
+                        Must be 3 to 30 characters
+                        <br />containing only letters, numbers or dash
+                    </p>
+                </div>
+                <!-- second part -->
+                <div class=" h-11">
+<label class="w-full input validator">
+    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <g fill="none">
+            <path
+                d="M7.25 11.5C6.83579 11.5 6.5 11.8358 6.5 12.25C6.5 12.6642 6.83579 13 7.25 13H8.75C9.16421 13 9.5 12.6642 9.5 12.25C9.5 11.8358 9.16421 11.5 8.75 11.5H7.25Z"
+                fill="currentColor"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6 1C4.61929 1 3.5 2.11929 3.5 3.5V12.5C3.5 13.8807 4.61929 15 6 15H10C11.3807 15 12.5 13.8807 12.5 12.5V3.5C12.5 2.11929 11.3807 1 10 1H6ZM10 2.5H9.5V3C9.5 3.27614 9.27614 3.5 9 3.5H7C6.72386 3.5 6.5 3.27614 6.5 3V2.5H6C5.44771 2.5 5 2.94772 5 3.5V12.5C5 13.0523 5.44772 13.5 6 13.5H10C10.5523 13.5 11 13.0523 11 12.5V3.5C11 2.94772 10.5523 2.5 10 2.5Z"
+                fill="currentColor"></path>
+        </g>
+    </svg>
+    <input type="tel" class="tabular-nums" required placeholder="Phone" pattern="[0-9]*" minlength="10" maxlength="10"
+        title="Must be 10 digits" />
+</label>
+<p class="validator-hint">Must be 10 digits</p>
+                </div>
+<div>
+    <div class="h-11">
+        <label class="w-full input validator">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </g>
+            </svg>
+            <input type="email" placeholder="mail@site.com" required />
+        </label>
+        <div class="validator-hint hidden">Enter valid email address</div>
+    </div>
+</div>
+            </div>
+            <!-- text area -->
+<div class="my-10">
+    <label for="" class="text-xl">Message</label>
+            <textarea class="mt-5 textarea w-full" placeholder="Here your comment........"></textarea>
+</div>
+        <button class="w-full btn bg-primary-bg1 border-none text-white mx-auto flex justify-center rounded-lg">Let's
+            talk</button>
+        </div>
+        <!-- start location part -->
+        <div class="space-y-4 flex flex-col items-center  my-10 lg:my-0">
+            <div class="text-center h-30 w-80 border-1 border-gray-300 flex flex-col justify-center rounded-lg shadow-lg">
+                <a href=""><i class="fa-solid fa-circle-info text-2xl"></i></a>
+                <h2>Company information:</h2>
+                <p>thermalLLC</p>
+                <p>Tax id: USXXXXXXX</p>
+            </div>
+            <div class="text-center h-30 w-80 border-1 border-gray-300 flex flex-col justify-center rounded-lg shadow-lg">
+                <a href=""><i class="fa-solid fa-location-dot text-2xl"></i></a>
+                <h2>Address:</h2>
+                <p>Kashipur, tulaotla, word-9 barishal</p>
+            </div>
+            <div class="text-center h-40 w-80 border-1 border-gray-300 flex flex-col justify-center rounded-lg shadow-lg">
+                <a href=""><i class="fa-solid fa-phone-volume text-2xl"></i></a>
+                <h2>Call us:</h2>
+                <p>Call us to speak to a member of our team. <br> we are always happy to help</p>
+            </div>
+        </div>
+    </div>
+</div>
+ </section>
+ <!--end contact section -->
      </main>
      <!-- footer section -->
       <footer>
