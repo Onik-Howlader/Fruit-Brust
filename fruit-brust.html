@@ -35,7 +35,7 @@
             </style>
 
 <body class="font-lato">
-    <header class="container mx-auto border">
+    <header class="container mx-auto">
         <div class="navbar bg-base-100 shadow-sm bg-primary-bg1 text-white lg:rounded-full">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -87,7 +87,7 @@
             <div class="carousel w-full">
                 <!-- slider-1 start -->
                 <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] md:h-[50vh] lg:h-[60vh] bg-cover bg-center flex items-center justify-center rounded-md">
-                    <div class="bg-primary-bg1 px-4 py-2 text-white absolute top-10 right-10 animate-pulse">
+                    <div class="bg-primary-bg1 text-xs lg:text-xl px-4 py-2 text-white absolute top-8 right-3 lg:top-10 lg:right-10 animate-pulse rounded-md">
                         <h6>Hot Deal!!</h6>
                     </div>
                     <div class="flex flex-col justify-center">
@@ -183,7 +183,7 @@
         </div>
     </header>
     <!-- main section -->
-     <main class="container mx-auto border">
+     <main class="container mx-auto">
 <!-- start Deal of the day -->
  <section>
     <!-- start deal and time -->
@@ -529,14 +529,14 @@
  <!--end why choose us section -->
 
  <!--start contact section -->
- <section class="my-15">
+ <section class="my-14 lg:my-50">
 <div>
     <div class="space-y-5">
         <h1 class="text-center text-xl md:text-3xl lg:text-5xl font-extrabold">Let's talk about your project</h1>
         <p class="text-center text-xl text-primary-text1">We help companies and individuals build out their brand guidelines</p>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 items-center bg-gray-100 px-10 rounded-md h-full lg:h-[60vh] mt-10 shadow-xl">
-        <div class="lg:col-span-2 mt-10 lg:mt-0">
+    <div class="grid grid-cols-1 lg:grid-cols-3 items-center bg-gray-100 px-10 md:px-40 gap-0 md:gap-15 lg:px-10 rounded-md h-full lg:h-[60vh] mt-10 shadow-xl">
+        <div class="lg:col-span-2 mt-10  lg:mt-0">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="h-11">
                     <label class="w-full input validator">
@@ -608,11 +608,11 @@
     <label for="" class="text-xl">Message</label>
             <textarea class="mt-5 textarea w-full" placeholder="Here your comment........"></textarea>
 </div>
-        <button class="w-full btn bg-primary-bg1 border-none text-white mx-auto flex justify-center rounded-lg">Let's
+        <button class="w-30 lg:w-50 hover:w-full btn bg-primary-bg1 border-none text-white mx-auto flex justify-center rounded-lg hover:bg-blue-500 transition-all ease-in-out duration-700 overflow-hidden">Let's
             talk</button>
         </div>
         <!-- start location part -->
-        <div class="space-y-4 flex flex-col items-center  my-10 lg:my-0">
+        <div class="space-y-4 flex flex-col items-center  my-10 md:my-50 lg:my-0">
             <div class="text-center h-30 w-80 border-1 border-gray-300 flex flex-col justify-center rounded-lg shadow-lg">
                 <a href=""><i class="fa-solid fa-circle-info text-2xl"></i></a>
                 <h2>Company information:</h2>
@@ -635,9 +635,41 @@
  </section>
  <!--end contact section -->
      </main>
-     <!-- footer section -->
-      <footer>
+     <!--start footer section -->
+    <footer class="footer footer-horizontal footer-center bg-black text-base-content rounded p-10">
+        <div class="flex gap-4">
+            <img src="./images/logo.png" alt="">
+            <p class="font-bold text-xl lg:text-3xl text-white">Fruit Burst</p>
+        </div>
+        <nav class="grid lg:grid-flow-col gap-4 text-white">
+            <a class="link link-hover hover:text-slate-400 text-lg lg:text-2xl">Home</a>
+            <a class="link link-hover hover:text-slate-400 text-lg lg:text-2xl">About Us</a>
+            <a class="link link-hover hover:text-slate-400 text-lg lg:text-2xl">Shop</a>
+            <a class="link link-hover hover:text-slate-400 text-lg lg:text-2xl">All Fruits</a>
+            <a class="link link-hover hover:text-slate-400 text-lg lg:text-2xl">Support</a>
+            <a class="link link-hover hover:text-slate-400 text-lg lg:text-2xl">My Account</a>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-4 text-white text-2xl">
+                <a href="" class="hover:bg-blue-500 p-1 rounded-full transition duration-500">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="" class="hover:bg-sky-300 rounded-full p-1 transition duration-500">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="" class="hover:bg-red-500 rounded-full p-1 transition duration-500">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="hover:bg-blue-500 p-1 rounded-full transition duration-500">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+        <aside>
+            <p class="text-white text-lg lg:text-2xl">Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd(Onik)</p>
+        </aside>
+    </footer>
+     <!--end footer section -->
 
-      </footer>
 </body>
 </html>
